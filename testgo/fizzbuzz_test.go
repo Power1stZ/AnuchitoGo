@@ -12,3 +12,4 @@ func TestFizzBuzzShouldReturn1WhenInput1(t *testing.T) {
 		t.Errorf("got %q but want %q", got, want)
 	}
 }
+:
