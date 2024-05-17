@@ -32,3 +32,23 @@ func TestIsFizzShouldReturnTrueWhenInput3(t *testing.T) {
 		t.Errorf("got %v but want %v", got, want)
 	}
 }
+
+func TestIsFizzShouldReturnFalseWhenInput4(t *testing.T) {
+	input := 4
+	got := IsFizz(input)
+
+	want := false
+	if got != want {
+		t.Errorf("got %v but want %v", got, want)
+	}
+}
+
+func TestIsBuzzShouldReturnTrueWhenInput5(t *testing.T) {
+	input := 5
+	got := IsBuzz(input)
+
+	want := true
+	if got != want {
+		t.Errorf("got %v but want %v", got, want)
+	}
+}
