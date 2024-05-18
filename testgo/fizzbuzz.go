@@ -8,10 +8,11 @@ func FizzBuzz(n int) string {
 
 func MappingFizzBuzz(n int) string {
 	fizz := n%3 == 0
+	buzz := n%5 == 0
 
 	result := map[bool]string{
 		true:  "Fizz",
-		false: strconv.Itoa(n),
+		false: map[bool]string{true: "Buzz", false: strconv.Itoa(n)}[buzz],
 	}[fizz]
 	return result
 }
