@@ -23,3 +23,14 @@ func TestFizzBuzzShouldReturn2WhenInput2(t *testing.T) {
 		t.Errorf("got %q but want %q", got, want)
 	}
 }
+
+func TestMappingValueShouldReturnFizzWhenInput3(t *testing.T) {
+	input := 3
+
+	got := MappingValue(input)
+
+	want := "Fizz"
+	if got != want {
+		t.Errorf("got %q but want %q", got, want)
+	}
+}
