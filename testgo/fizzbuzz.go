@@ -15,6 +15,7 @@ func MappingValue(n int) string {
 		9:  "Fizz",
 		10: "Buzz",
 		12: "Fizz",
+		15: "FizzBuzz",
 	}
 
 	if _, ok := mapData[n]; !ok {
