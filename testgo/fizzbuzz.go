@@ -15,6 +15,7 @@ func MappingFizzBuzz(n int) string {
 		6:  "Fizz",
 		9:  "Fizz",
 		10: "Buzz",
+		12: "Fizz",
 	}
 
 	if value, ok := mapping[n]; ok {
