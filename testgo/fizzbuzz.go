@@ -10,10 +10,11 @@ func FizzBuzz(n int) string {
 func MappingFizzBuzz(n int) string {
 
 	mapping := map[int]string{
-		3: "Fizz",
-		5: "Buzz",
-		6: "Fizz",
-		9: "Fizz",
+		3:  "Fizz",
+		5:  "Buzz",
+		6:  "Fizz",
+		9:  "Fizz",
+		10: "Buzz",
 	}
 
 	if value, ok := mapping[n]; ok {
