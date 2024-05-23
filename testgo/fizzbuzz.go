@@ -11,7 +11,7 @@ func MappingFizzBuzz(n int) string {
 	buzz := n%5 == 0
 
 	result := map[bool]string{
-		true:  "Fizz",
+		true:  "Fizz" + map[bool]string{true: "Buzz", false: ""}[buzz],
 		false: map[bool]string{true: "Buzz", false: strconv.Itoa(n)}[buzz],
 	}[fizz]
 	return result
